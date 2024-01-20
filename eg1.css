@@ -1,0 +1,29 @@
+body {
+    box-sizing: border-box;
+    margin: 20px;
+    font-family: 'gill sans', 'gill sans mt', calibri, 'trebuchet MS', 'Times new roman';
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color: pink;
+  }
+  
+  .item {
+    border: 2px solid black;
+    text-align: center;
+    padding: 20px; /* Corrected syntax here */
+    background-color: lightblue;
+  }
+  @media(max-width: 425px){
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media(min-width: 768px){
+    .container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+  }
